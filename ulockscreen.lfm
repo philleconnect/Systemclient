@@ -1,0 +1,42 @@
+object Lockscreen: TLockscreen
+  Cursor = crNone
+  Left = 67
+  Height = 240
+  Top = 672
+  Width = 955
+  BorderStyle = bsNone
+  Caption = 'Lockscreen'
+  ClientHeight = 240
+  ClientWidth = 955
+  Color = clBlack
+  FormStyle = fsSystemStayOnTop
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  WindowState = wsMaximized
+  object lockLabel: TLabel
+    Cursor = crNone
+    Left = 8
+    Height = 55
+    Top = 8
+    Width = 813
+    Caption = 'Der PC wurde durch die Lehrkraft gesperrt.'
+    Font.Color = clRed
+    Font.Height = -40
+    ParentColor = False
+    ParentFont = False
+  end
+  object reloadTimer: TTimer
+    Enabled = False
+    OnTimer = reloadTimerTimer
+    left = 52
+    top = 95
+  end
+  object lockscreenTimer: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = lockscreenTimerTimer
+    left = 128
+    top = 95
+  end
+end
