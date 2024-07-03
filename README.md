@@ -1,3 +1,5 @@
+__Archived: Not actively maintained anymore!__
+
 # Systemclient
 This is the background client application for student machines of PhilleConnect. It waites for requests from a teacher machine and will lock the monitor or shutdown the workstation if required. It also controls the VNC server and submitts a screenshot if requested.
 
